@@ -1,8 +1,10 @@
 // IIFE
 (function() {
+	var cats = getCatData();
 	// js body here
 	function initialize() {
 		console.log('initialize');
+		console.log(cats);
 		alternateRows('cats');
 		$('#hideButton').click(function() {
 			if ($('#cats').is(':visible')) {
