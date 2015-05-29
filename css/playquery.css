@@ -1,0 +1,32 @@
+table {
+	padding: 5px;
+	margin: 5px;	
+}
+
+th {
+	color: white;
+	background: navy;
+}
+
+td {
+	color: navy;
+}
+
+td.inner {
+	border-right: 1px;
+	border-right-style: solid;
+	border-right-color: navy;
+	padding: 5px;
+}
+
+td.rightmost {
+	padding: 5px;
+}
+
+.zebra {
+	background-color: #ddd;
+}
+
+.row {
+	padding-bottom: 10px;
+}

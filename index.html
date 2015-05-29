@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playing with jQuery</title>
+  <link href="css/playquery.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div id="main">
+    <div class="container-fluid" id="content">
+      <div class="row">
+        <div class="col-md-12">
+          <h1> Cats of The Fretways </h1>
+          <p id="catstatus">
+            These are the current cats.
+          </p>
+          <table class="data" id="cats">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Color</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class='inner'>001</td>
+                <td class='inner'>Cinder</td>
+                <td class='inner'>Orange</td>
+                <td class='rightmost'>2006</td>
+              </tr>
+              <tr>
+                <td class='inner'>002</td>
+                <td class='inner'>Shivers</td>
+                <td class='inner'>Black and White</td>
+                <td class='rightmost'>2010</td>
+              </tr>
+              <tr>
+                <td class='inner'>003</td>
+                <td class='inner'>Catnip</td>
+                <td class='inner'>Grey and White</td>
+                <td class='rightmost'>2010</td>
+              </tr>
+              <tr>
+                <td class='inner'>004</td>
+                <td class='inner'>Milkshake</td>
+                <td class='inner'>White and Orange</td>
+                <td class='rightmost'>2014</td>
+              </tr>
+              <tr>
+                <td class='inner'>005</td>
+                <td class='inner'>Bella</td>
+                <td class='inner'>Grey and White</td>
+                <td class='rightmost'>2015</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <input type="button" id="hideButton" value="Hide" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/lib/knockout.js"></script>
+  <script src="js/lib/underscore.js"></script>
+  <script src="js/lib/jquery.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
