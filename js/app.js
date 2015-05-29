@@ -8,11 +8,11 @@
 			if ($('#cats').is(':visible')) {
 				$('#cats').hide();
 				$('#hideButton').val("Show");	
-				$('#catstatus').text("These are the current cats.")
+				$('#catstatus').text("Where are the current cats?");
 			} else {
 				$('#cats').show();
 				$('#hideButton').val("Hide");	
-				$('#catstatus').text("Wher are the current cats?")
+				$('#catstatus').text("These are the current cats.");
 			}
 		});
 	}
