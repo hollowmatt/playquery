@@ -18,6 +18,12 @@
 				$('#catstatus').text("These are the current cats.");
 			}
 		});
+		$('#cats tbody tr').mouseover(function() {
+			$(this).addClass('zebraHover');
+		});
+		$('#cats tbody tr').mouseout(function() {
+			$(this).removeClass('zebraHover');
+		});
 	}
 
 	//Function to add alternating row color to a table

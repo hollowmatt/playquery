@@ -27,6 +27,10 @@ td.rightmost {
 	background-color: #ddd;
 }
 
+.zebraHover {
+	background-color: #8D79AE;
+}
+
 .row {
 	padding-bottom: 10px;
 }
