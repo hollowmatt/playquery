@@ -7,12 +7,13 @@
 		console.log(cats);
 		alternateRows('cats');
 		$('#hideButton').click(function() {
+			// $('#cats').toggle('slow');
 			if ($('#cats').is(':visible')) {
-				$('#cats').hide();
+				$('#cats').fadeOut(1000);
 				$('#hideButton').val("Show");	
 				$('#catstatus').text("Where are the current cats?");
 			} else {
-				$('#cats').show();
+				$('#cats').fadeIn(1000);
 				$('#hideButton').val("Hide");	
 				$('#catstatus').text("These are the current cats.");
 			}
