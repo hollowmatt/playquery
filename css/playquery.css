@@ -34,3 +34,17 @@ td.rightmost {
 .row {
 	padding-bottom: 10px;
 }
+
+.catheader {
+	background-color: #FFB523;
+	color: white;
+	padding-left: 10px;
+}
+
+#catstatus {
+	padding: 10px;
+	margin: 5px;
+	border-style: solid;
+	border-color: navy;
+}
+

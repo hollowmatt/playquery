@@ -24,6 +24,12 @@
 		$('#cats tbody tr').mouseout(function() {
 			$(this).removeClass('zebraHover');
 		});
+		$('#catinfo > div').hide();
+		$('#catinfo h3').click(function() {
+		  $(this).next().animate( 
+		    {'height':'toggle'}, 'slow', 'linear'
+		  );
+		});
 	}
 
 	//Function to add alternating row color to a table
