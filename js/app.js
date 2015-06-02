@@ -6,6 +6,17 @@
 		console.log('initialize');
 		console.log(cats);
 		alternateRows('cats');
+		setUIActions();
+	}
+
+	//Function to add alternating row color to a table
+	function alternateRows(tableID) {
+		console.log("Table to alternate: " + tableID);
+		$('#' + tableID + ' tbody tr:even').addClass('zebra');
+	}
+
+	//Use this function to setup all of the JQuery actions on click, mouseover/out, etc.
+	function setUIActions() {
 		$('#hideButton').click(function() {
 			// $('#cats').toggle('slow');
 			if ($('#cats').is(':visible')) {
@@ -30,12 +41,6 @@
 		    {'height':'toggle'}, 'slow', 'easeOutBounce'
 		  );
 		});
-	}
-
-	//Function to add alternating row color to a table
-	function alternateRows(tableID) {
-		console.log("Table to alternate: " + tableID);
-		$('#' + tableID + ' tbody tr:even').addClass('zebra');
 	}
 
 	$(document).ready(initialize());
